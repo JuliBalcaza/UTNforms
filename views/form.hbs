@@ -1,0 +1,19 @@
+<header>
+    <h1>API envio de mails</h1>
+</header>
+<main>
+    <section>
+        <form action="/form" method="POST">
+        <label for="name" hidden>Ingrese Nombre</label>
+        <input type="text" id="name" name="name" placeholder="nombre" autofocus>
+        <label for="lastName" hidden>Ingrese Apellido</label>
+        <input type="text" id="lastName" name="lastName" placeholder="apellido">
+        <label for="email" hidden>Ingrese Email</label>
+        <input type="text" id="email" name="email" placeholder="email">
+        <label for="message" hidden>Ingrese Mensaje</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        {{message}}
+        <input type="submit" value="send">
+        </form>
+    </section>
+</main>
