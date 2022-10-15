@@ -5,6 +5,9 @@ import routeForm from "./routes/form.js"
 const PORT = 3000;
 const app = express();
 
+//creating global (locals) variables for all views
+app.locals.sendMailFeedback = 'no messages yet'
+
 //express-hbs config
 app.engine(".hbs", hbs.engine({extname: "hbs"}));// we change extension name just because "express-handlebars" is too large//
 app.set('view engine', 'hbs'); // we set the view engine like itself (seteamos el motor de plantillas como tal)
