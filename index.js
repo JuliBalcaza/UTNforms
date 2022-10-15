@@ -1,8 +1,7 @@
 import hbs from "express-handlebars";
 import express from "express";
 import routeForm from "./routes/form.js"
-import * as dotenv from "dotenv";// importamos el paquete dotenv donde tengo mis variables de entorno, recomendacion del fabricante (as es alias)
-dotenv.config();//lo llamo xa que funcione
+
 const PORT = 3000;
 const app = express();
 
